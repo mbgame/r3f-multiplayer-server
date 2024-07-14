@@ -1,4 +1,5 @@
 import {Server} from 'socket.io'
+const port = process.env.PORT || 3000;
 
 const io = new Server({
     cors: {
@@ -6,7 +7,10 @@ const io = new Server({
     }
 })
 
-io.listen(3000)
+
+io.listen(port)
+
+console.log("port : ",port)
 
 const characters =[]
 
