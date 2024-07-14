@@ -3,7 +3,8 @@ const port = process.env.PORT || 3000;
 
 const io = new Server({
     cors: {
-        origin: 'https://r3f-multiplayer.vercel.app/',
+        // origin: 'https://r3f-multiplayer.vercel.app/',
+        origin: '*',
     }
 })
 
